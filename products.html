@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Collections | GT Boutique Luxury Showroom</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">GT <span class="gold-text">BOUTIQUE</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">The House</a></li>
+                <li><a href="products.html" class="active">Collections</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Concierge</a></li>
+            </ul>
+
+            <div class="mobile-toggle" style="display:none;">
+                <span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <section class="section-padding" style="background-color: var(--cream);">
+            <div class="nav-container">
+                <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 60px auto;">
+                    <p class="text-upper" style="margin-bottom: 20px;">Curated Selection</p>
+                    <h1 class="display-2">The <span class="gold-text">Collections</span></h1>
+                    <p class="muted" style="font-size: 1.1rem; line-height: 1.8;">
+                        Explore our meticulously sourced treasury of iconic leather goods and rare fragrances. 
+                        Every piece is authenticated by our in-house experts to ensure the highest standards of luxury.
+                    </p>
+                </div>
+
+                <div class="reveal" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 100px; border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); padding: 30px 0;">
+                    <button class="btn-outline" onclick="loadProducts('all')" style="border: none; cursor: pointer; font-weight: 600;">All Treasures</button>
+                    <button class="btn-outline" onclick="loadProducts('Handbags')" style="border: none; cursor: pointer; font-weight: 600;">Handbags</button>
+                    <button class="btn-outline" onclick="loadProducts('Perfumes')" style="border: none; cursor: pointer; font-weight: 600;">Fragrances</button>
+                    <button class="btn-outline" onclick="loadProducts('Accessories')" style="border: none; cursor: pointer; font-weight: 600;">Accessories</button>
+                </div>
+
+                <div id="product-container" class="product-grid reveal">
+                    
+                    <div class="product-card" data-category="Handbags">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800" alt="Hermes Birkin">
+                            <div style="position: absolute; top: 20px; right: 20px; background: var(--white); padding: 5px 15px; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px;">Rare</div>
+                        </div>
+                        <div class="product-info">
+                            <p class="text-upper" style="font-size: 0.6rem; margin-bottom: 10px; color: var(--gold);">Hermès</p>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Birkin 30 Gold Hardware</h3>
+                            <p class="gold-text" style="font-weight: 500;">Private Inquiry</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Perfumes">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800" alt="Byredo">
+                        </div>
+                        <div class="product-info">
+                            <p class="text-upper" style="font-size: 0.6rem; margin-bottom: 10px; color: var(--gold);">Byredo</p>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Mojave Ghost Eau De Parfum</h3>
+                            <p class="gold-text" style="font-weight: 500;">₹ 24,500</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Handbags">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800" alt="Chanel">
+                        </div>
+                        <div class="product-info">
+                            <p class="text-upper" style="font-size: 0.6rem; margin-bottom: 10px; color: var(--gold);">Chanel</p>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Classic Double Flap Bag</h3>
+                            <p class="gold-text" style="font-weight: 500;">Enquire for Price</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Perfumes">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800" alt="Luxury Scent">
+                        </div>
+                        <div class="product-info">
+                            <p class="text-upper" style="font-size: 0.6rem; margin-bottom: 10px; color: var(--gold);">Le Labo</p>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Santal 33 Collector's Edition</h3>
+                            <p class="gold-text" style="font-weight: 500;">₹ 28,000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="nav-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo" style="color: var(--white); margin-bottom: 30px;">GT <span class="gold-text">BOUTIQUE</span></div>
+                    <p style="opacity: 0.6; max-width: 300px; font-size: 0.9rem;">Jaipur's premier destination for authenticated luxury goods and niche fragrances.</p>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Quick Links</h4>
+                    <ul style="list-style: none; font-size: 0.8rem; opacity: 0.6;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color:white; text-decoration:none;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about.html" style="color:white; text-decoration:none;">Our Story</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color:white; text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Legal</h4>
+                    <ul style="list-style: none; font-size: 0.8rem; opacity: 0.6;">
+                        <li style="margin-bottom: 10px;">Authenticity Guarantee</li>
+                        <li style="margin-bottom: 10px;">Privacy Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Visit</h4>
+                    <p style="opacity: 0.6; font-size: 0.8rem;">GT Showroom, Phase II,<br>Jaipur, Rajasthan</p>
+                </div>
+            </div>
+            <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                <p style="font-size: 0.6rem; opacity: 0.4; letter-spacing: 2px;">© 2026 GT BOUTIQUE. UNCOMPROMISING LUXURY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+</html>

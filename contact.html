@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge & Inquiries | GT Boutique Luxury Showroom</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">GT <span class="gold-text">BOUTIQUE</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">The House</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html" class="active">Concierge</a></li>
+            </ul>
+
+            <div class="mobile-toggle" style="display:none;">
+                <span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px; background-color: var(--cream); min-height: 100vh;">
+        
+        <section class="section-padding">
+            <div class="nav-container">
+                <div class="reveal" style="text-align: center; max-width: 700px; margin: 0 auto 80px auto;">
+                    <p class="text-upper" style="margin-bottom: 20px;">Private Inquiries</p>
+                    <h1 class="display-2">Luxury <span class="gold-text">Concierge</span></h1>
+                    <p style="opacity: 0.7;">
+                        Whether you are looking to source a rare timepiece, a limited edition handbag, or wish to schedule a private viewing in our Jaipur showroom, our specialists are at your service.
+                    </p>
+                </div>
+
+                <div class="form-container reveal">
+                    <form id="contact-form" action="#" method="POST">
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 20px;">
+                            <div class="form-group">
+                                <input type="text" name="first_name" id="first_name" placeholder=" " required>
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="last_name" id="last_name" placeholder=" " required>
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="phone" placeholder=" ">
+                            <label for="phone">Contact Number (Optional)</label>
+                        </div>
+
+                        <div class="form-group" style="border: none; padding-top: 20px;">
+                            <p class="text-upper" style="font-size: 0.65rem; margin-bottom: 15px;">Nature of Inquiry</p>
+                            <select name="subject" style="width: 100%; padding: 15px; border: 1px solid var(--gray-200); font-family: inherit; outline: none; background: var(--white);">
+                                <option value="general">General Inquiry</option>
+                                <option value="sourcing">Product Sourcing Request</option>
+                                <option value="viewing">Private Showroom Appointment</option>
+                                <option value="fragrance">Fragrance Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 40px;">
+                            <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">How may we assist you?</label>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 60px;">
+                            <button type="submit" class="btn-gold" style="width: 100%;">Send Inquiry</button>
+                            <p style="font-size: 0.7rem; opacity: 0.5; margin-top: 20px; letter-spacing: 1px;">
+                                A BRAND SPECIALIST WILL RESPOND WITHIN 24 HOURS.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background-color: var(--white); border-top: 1px solid var(--gray-200);">
+            <div class="nav-container">
+                <div class="footer-grid reveal">
+                    
+                    <div style="padding: 40px; border-right: 1px solid var(--gray-200);">
+                        <p class="text-upper" style="margin-bottom: 20px;">The Showroom</p>
+                        <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 20px;">Visit Us</h3>
+                        <p style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+                            GT Showroom, Phase II,<br>
+                            Jaipur, Rajasthan 302017<br>
+                            India
+                        </p>
+                        <p style="margin-top: 20px; font-weight: 600; color: var(--gold);">By Appointment Only</p>
+                    </div>
+
+                    <div style="padding: 40px; border-right: 1px solid var(--gray-200);">
+                        <p class="text-upper" style="margin-bottom: 20px;">Direct Contact</p>
+                        <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 20px;">Speak with Us</h3>
+                        <p style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+                            Inquiries: +91 98765 43210<br>
+                            WhatsApp: +91 98765 43211<br>
+                            Email: concierge@gtboutique.com
+                        </p>
+                    </div>
+
+                    <div style="padding: 40px; grid-column: span 2;">
+                        <p class="text-upper" style="margin-bottom: 20px;">Operating Hours</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem; opacity: 0.7;">
+                            <p>Monday — Friday</p> <p style="text-align: right;">11:00 AM — 08:00 PM</p>
+                            <p>Saturday</p> <p style="text-align: right;">12:00 PM — 06:00 PM</p>
+                            <p>Sunday</p> <p style="text-align: right;">Closed / Private Viewing Only</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="nav-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo" style="color: var(--white); margin-bottom: 30px;">GT <span class="gold-text">BOUTIQUE</span></div>
+                    <p style="opacity: 0.6; max-width: 300px; font-size: 0.9rem;">The premier destination for authenticated luxury goods and niche fragrances in Jaipur.</p>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Collections</h4>
+                    <ul style="list-style: none; font-size: 0.8rem; opacity: 0.6;">
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color:white; text-decoration:none;">Handbags</a></li>
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color:white; text-decoration:none;">Fragrances</a></li>
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color:white; text-decoration:none;">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Support</h4>
+                    <ul style="list-style: none; font-size: 0.8rem; opacity: 0.6;">
+                        <li style="margin-bottom: 10px;">Authenticity Check</li>
+                        <li style="margin-bottom: 10px;">Sourcing Service</li>
+                        <li style="margin-bottom: 10px;">Privacy Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-upper" style="color: var(--white); margin-bottom: 25px; font-size: 0.7rem;">Newsletter</h4>
+                    <input type="email" placeholder="Email Address" style="background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px 0; color: white; width: 100%; outline: none; margin-bottom: 15px;">
+                    <button class="text-upper" style="background: none; border: none; color: var(--gold); cursor: pointer; font-size: 0.7rem;">Subscribe</button>
+                </div>
+            </div>
+            <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                <p style="font-size: 0.6rem; opacity: 0.4; letter-spacing: 2px;">© 2026 GT BOUTIQUE. UNCOMPROMISING LUXURY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
